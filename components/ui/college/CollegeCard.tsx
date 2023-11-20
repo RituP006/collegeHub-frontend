@@ -7,7 +7,6 @@ import { FaStar } from "react-icons/fa";
 
 const CollegeCard = ({ college }: { college: College }) => {
   const { name, yearFounded, city, country, rate, slug, createdAt } = college;
-  console.log(college);
 
   return (
     <Link href={`/college/${slug}`} legacyBehavior>
@@ -48,13 +47,7 @@ const CollegeCard = ({ college }: { college: College }) => {
               <div className="text-sm text-slate-500 italic whitespace-nowrap">
                 {createdAt}
               </div>
-              {/* {job.featuredJob && (
-              <div
-                className={`text-xs inline-flex font-medium rounded-full text-center px-2.5 py-1 bg-amber-100 text-amber-600`}
-              >
-                Featured
-              </div>
-            )} */}
+
               <button className="text-slate-300 hover:text-slate-400">
                 <span className="sr-only">Bookmark</span>
                 <svg

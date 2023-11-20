@@ -21,3 +21,24 @@ export function sortCollegesByYearFoundedDesc(colleges: College[]): College[] {
 export const sortByPopularity = (colleges: College[]): College[] => {
   return colleges.slice().sort((a, b) => b.students.length - a.students.length);
 };
+
+export const mapCollege = (data: any) => {
+  const college = {
+    city: data.attributes.city,
+    country: data.attributes.country,
+    createdAt: data.attributes.createdAt,
+    name: data.attributes.name,
+    publishedAt: data.attributes.publishedAt,
+    rate: data.attributes.rate,
+    slug: data.attributes.slug,
+    state: data.attributes.state,
+    updatedAt: data.attributes.updatedAt,
+    yearFounded: data.attributes.yearFounded,
+    courses: data.attributes.courses.data.map(
+      (data: any) => data.attributes.courseName
+    ),
+    students: data.attributes.students.data.map((data: any) => data.attributes),
+  };
+
+  return college;
+};

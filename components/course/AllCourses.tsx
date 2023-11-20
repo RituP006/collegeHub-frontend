@@ -23,7 +23,6 @@ const AllCourses = () => {
           publishedAt: item.attributes.publishedAt,
         },
       }));
-      console.log(coursesList);
       setCourses(coursesList);
       setIsLoading(false);
     };

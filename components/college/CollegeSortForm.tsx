@@ -20,8 +20,6 @@ const CollegeSortForm = ({
     e.preventDefault();
 
     const newSortby = e.target.value;
-    console.log(newSortby);
-
     let sortedCollege: College[] = [];
 
     switch (newSortby) {

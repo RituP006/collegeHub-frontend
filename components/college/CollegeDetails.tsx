@@ -18,7 +18,6 @@ const CollegeDetails = ({ slug }: { slug: string }) => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(slug);
     fetchData();
   }, []);
 
@@ -29,8 +28,6 @@ const CollegeDetails = ({ slug }: { slug: string }) => {
   async function fetchData() {
     setIsLoading(true);
     const data = await datasource.getCollegeBySlug(slug);
-
-    console.log(data.attributes);
     setCollege({
       city: data.attributes.city,
       country: data.attributes.country,
@@ -75,7 +72,7 @@ const CollegeDetails = ({ slug }: { slug: string }) => {
           </div>
         </Button>
       </div>
-      <main className="bg-white">
+      <main className="bg-white px-6">
         <div className="h-20 md:56 bg-slate-200">
           <Image
             className="object-cover h-full w-full"
@@ -171,12 +168,12 @@ const CollegeDetails = ({ slug }: { slug: string }) => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="pt-5">
           <h3 className="text-center text-xl leading-snug text-slate-800 font-bold mb-6">
             Our Top Performers
           </h3>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 content-center">
             {college.students.length > 0 ? (
               college.students.map((stud) => {
                 return <StudentCard student={stud} />;
