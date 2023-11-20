@@ -1,0 +1,27 @@
+<svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 16"
+              fill="#B22234"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-4 w-4 text-muted-foreground"
+            >
+              <rect width="24" height="1.07" fill="#B22234" />
+              <rect y="1.07" width="24" height="1.07" fill="#FFFFFF" />
+              <rect y="2.14" width="24" height="1.07" fill="#B22234" />
+              <rect y="3.21" width="24" height="1.07" fill="#FFFFFF" />
+              <rect y="4.28" width="24" height="1.07" fill="#B22234" />
+              <rect y="5.35" width="24" height="1.07" fill="#FFFFFF" />
+              <rect y="6.42" width="24" height="1.07" fill="#B22234" />
+              <rect y="7.49" width="24" height="1.07" fill="#FFFFFF" />
+              <rect y="8.56" width="24" height="1.07" fill="#B22234" />
+              <rect y="9.63" width="24" height="1.07" fill="#FFFFFF" />
+              <rect y="10.7" width="24" height="1.07" fill="#B22234" />
+              <rect y="11.77" width="24" height="1.07" fill="#FFFFFF" />
+              <rect y="12.84" width="24" height="1.07" fill="#B22234" />
+
+              <rect x="0" y="0" width="8" height="7.5" fill="#3C3B6E" />
+
+              <circle cx="1.5" cy="1.5" r="0.25" fill="#FFFFFF" />
+              <circle cx="3" cy="1.5" r="0.25" fill="#FFFFFF" />
+            </svg>
